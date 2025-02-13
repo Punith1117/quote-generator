@@ -13,11 +13,23 @@
     </header>
     <div class="main-content">
         <div class="quote-content">
-            <div class="quote">Truth alone triumphs</div>
-            <div class="given-by">Ancient test Mundaka Upanishad</div>
+            <div class="quote"></div>
+            <div class="given-by"></div>
         </div>
         <button>Generate</button>
     </div>
+    <script>
+        let ran = Math.random()
+        let quote = document.querySelector('.quote')
+        let author = document.querySelector('.given-by')
+        if (ran > 0.2) {
+            quote.innerHTML = '<del>Nothing is impossible</del> Anything is possible'
+            author.textContent = 'Shailesh Nayak'
+        } else {
+            quote.textContent = 'Truth alone triumphs'
+            author.textContent = 'Ancient text - Mundaka Upanishad'
+        }
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
